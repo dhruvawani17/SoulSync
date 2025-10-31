@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features - SoulSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>SoulSync</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding-top: 150px; min-height: 100vh;">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🧠 Emotional Support</h3>
+        <p>Receive kind, empathetic responses whenever you need someone to talk to. Our AI understands your emotions and provides thoughtful, caring responses.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🪷 Mindfulness</h3>
+        <p>Get daily meditation and breathing exercises for inner peace. Learn techniques to calm your mind and reduce stress in just a few minutes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📈 Mood Tracker</h3>
+        <p>Visualize your emotional journey and progress over time. Track patterns and understand what affects your mental wellbeing.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌙 Sleep Help</h3>
+        <p>Guided relaxation and sleep routines for deep rest. Overcome insomnia with proven techniques and calming exercises.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💬 Anonymous Chat</h3>
+        <p>Speak freely — your identity and privacy are completely safe. No registration required, no data stored permanently.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎧 Calm Sounds</h3>
+        <p>Listen to nature sounds and healing music anytime. Create a peaceful environment wherever you are.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎯 Personalized Support</h3>
+        <p>AI that learns your preferences and adapts to your unique needs. Get responses tailored to your situation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📚 Resource Library</h3>
+        <p>Access articles, tips, and resources about mental health. Learn coping strategies and self-care techniques.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚡ Crisis Support</h3>
+        <p>Quick access to emergency resources and helplines when you need immediate professional help.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+      <h3 style="color: #ffda79; font-size: 1.8em; margin-bottom: 20px;">Ready to start your wellness journey?</h3>
+      <button class="btn" onclick="window.location.href='index.html#home'">Try SoulSync Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SoulSync | Your Mind Matters 💜</p>
+  </footer>
+
+  <button id="chatbot-btn" onclick="toggleChat()">💬</button>
+
+  <div id="chatbot-box">
+    <header>SoulSync Chatbot 💫</header>
+    <div id="chatbot-messages">
+      <div class="bot message">Hey there 🌿 How are you feeling today?</div>
+    </div>
+    <div>
+      <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+      <button id="close-btn" onclick="toggleChat()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

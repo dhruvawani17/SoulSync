@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - SoulSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>SoulSync</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding-top: 150px; min-height: 100vh;">
+    <h2>Contact Us</h2>
+    
+    <div style="max-width: 600px; margin: 0 auto;">
+      <p style="font-size: 1.2em; margin-bottom: 50px; text-align: center;">
+        Have questions or feedback? We'd love to hear from you!
+      </p>
+
+      <div style="background: rgba(0, 0, 0, 0.3); border-radius: 20px; padding: 40px; margin-bottom: 40px;">
+        <h3 style="color: #ffda79; margin-bottom: 20px;">📧 Email Us</h3>
+        <p style="font-size: 1.1em; margin-bottom: 10px;">
+          <strong>General Inquiries:</strong> soul.sync@gmail.com
+        </p>
+        <p style="font-size: 1.1em; margin-bottom: 10px;">
+          <strong>Support:</strong> support@soulsync.com
+        </p>
+        <p style="font-size: 1.1em;">
+          <strong>Partnerships:</strong> partners@soulsync.com
+        </p>
+      </div>
+
+      <div style="background: rgba(0, 0, 0, 0.3); border-radius: 20px; padding: 40px; margin-bottom: 40px;">
+        <h3 style="color: #ffda79; margin-bottom: 20px;">📱 Follow Us</h3>
+        <p style="font-size: 1.1em; margin-bottom: 10px;">
+          <strong>Twitter:</strong> @SoulSyncApp
+        </p>
+        <p style="font-size: 1.1em; margin-bottom: 10px;">
+          <strong>Instagram:</strong> @soulsync.official
+        </p>
+        <p style="font-size: 1.1em;">
+          <strong>LinkedIn:</strong> SoulSync
+        </p>
+      </div>
+
+      <div style="background: rgba(0, 0, 0, 0.3); border-radius: 20px; padding: 40px; margin-bottom: 40px;">
+        <h3 style="color: #ffda79; margin-bottom: 20px;">🆘 Crisis Resources</h3>
+        <p style="font-size: 1.1em; margin-bottom: 15px; line-height: 1.6;">
+          <strong>National Suicide Prevention Lifeline:</strong><br>
+          Call: 988 (Available 24/7)
+        </p>
+        <p style="font-size: 1.1em; margin-bottom: 15px; line-height: 1.6;">
+          <strong>Crisis Text Line:</strong><br>
+          Text HOME to 741741
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.6;">
+          <strong>International Association for Suicide Prevention:</strong><br>
+          <a href="https://www.iasp.info/resources/Crisis_Centres/" style="color: #ffda79;">Find your country's helpline</a>
+        </p>
+      </div>
+
+      <div style="background: rgba(255, 218, 121, 0.2); border-radius: 20px; padding: 30px; border: 2px solid #ffda79;">
+        <h3 style="color: #ffda79; margin-bottom: 15px;">💜 Remember</h3>
+        <p style="font-size: 1.1em; line-height: 1.6;">
+          SoulSync is an AI companion for emotional support, but it's not a replacement for professional mental health care. 
+          If you're experiencing a crisis, please reach out to emergency services or a crisis helpline immediately.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;">
+        <button class="btn" onclick="window.location.href='index.html#home'">Back to Home</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SoulSync | Your Mind Matters 💜</p>
+  </footer>
+
+  <button id="chatbot-btn" onclick="toggleChat()">💬</button>
+
+  <div id="chatbot-box">
+    <header>SoulSync Chatbot 💫</header>
+    <div id="chatbot-messages">
+      <div class="bot message">Hey there 🌿 How are you feeling today?</div>
+    </div>
+    <div>
+      <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+      <button id="close-btn" onclick="toggleChat()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

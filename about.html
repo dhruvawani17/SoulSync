@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - SoulSync</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>SoulSync</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding-top: 150px; min-height: 100vh;">
+    <h2>About SoulSync</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: left; line-height: 1.8;">
+      <p style="font-size: 1.2em; margin-bottom: 30px;">
+        SoulSync is your AI-powered mental health companion, designed to provide emotional support, 
+        guidance, and mindfulness resources whenever you need them.
+      </p>
+      
+      <h3 style="color: #ffda79; margin-top: 40px; margin-bottom: 20px;">Our Mission</h3>
+      <p style="font-size: 1.1em; margin-bottom: 20px;">
+        We believe that mental health support should be accessible to everyone, anytime, anywhere. 
+        SoulSync combines the power of AI with empathetic conversation design to create a safe space 
+        where you can express your feelings without judgment.
+      </p>
+
+      <h3 style="color: #ffda79; margin-top: 40px; margin-bottom: 20px;">Why SoulSync?</h3>
+      <ul style="font-size: 1.1em; margin-left: 20px; margin-bottom: 20px;">
+        <li style="margin-bottom: 15px;">🌟 <strong>Always Available:</strong> Get support 24/7, no appointments needed</li>
+        <li style="margin-bottom: 15px;">🔒 <strong>Private & Secure:</strong> Your conversations are confidential</li>
+        <li style="margin-bottom: 15px;">💜 <strong>Empathetic AI:</strong> Designed to understand and respond with care</li>
+        <li style="margin-bottom: 15px;">🌈 <strong>Holistic Approach:</strong> Combines chat, mindfulness, and mood tracking</li>
+        <li style="margin-bottom: 15px;">🆓 <strong>Free Access:</strong> Mental health support shouldn't cost a fortune</li>
+      </ul>
+
+      <h3 style="color: #ffda79; margin-top: 40px; margin-bottom: 20px;">How It Works</h3>
+      <p style="font-size: 1.1em; margin-bottom: 20px;">
+        Simply click the chat button and start talking. SoulSync uses advanced AI to understand your 
+        emotions and provide helpful responses, breathing exercises, mindfulness tips, and more. 
+        Whether you're feeling stressed, anxious, sad, or just need someone to talk to, SoulSync is here for you.
+      </p>
+
+      <div style="text-align: center; margin-top: 50px;">
+        <button class="btn" onclick="window.location.href='index.html#home'">Start Chatting</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SoulSync | Your Mind Matters 💜</p>
+  </footer>
+
+  <button id="chatbot-btn" onclick="toggleChat()">💬</button>
+
+  <div id="chatbot-box">
+    <header>SoulSync Chatbot 💫</header>
+    <div id="chatbot-messages">
+      <div class="bot message">Hey there 🌿 How are you feeling today?</div>
+    </div>
+    <div>
+      <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="if(event.key==='Enter') sendMessage()">
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+      <button id="close-btn" onclick="toggleChat()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
